@@ -98,7 +98,7 @@ def circle_and_rectangle():
 
     center = rg.Point(200, 200)
     corner1 = rg.Point(300, 5)
-    corner2 = rg.Point(360, 18)
+    corner2 = rg.Point(360, 400)
 
     circle = rg.Circle(center, 50)
     rectangle = rg.Rectangle(corner1, corner2)
