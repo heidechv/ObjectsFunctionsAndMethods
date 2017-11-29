@@ -83,6 +83,7 @@ def main():
 
     # When the TODOs ask you to test YOUR code, put YOUR tests here:
     try_methods()
+    try_functions()
 
 
     window.close_on_mouse_click()
@@ -185,6 +186,7 @@ def try_methods():
     john.forward(50)
     john.backward(100)
 
+
 def try_functions():
     """
     Causes several SimpleTurtles to do the following:
@@ -204,6 +206,9 @@ def try_functions():
     # HINT: see   jump_and_move_turtle   above.
     #
     ####################################################################
+    jump_and_move_turtle(200, 100, 300, 30)
+    jump_and_move_turtle(100, 200, 0, 0)
+    jump_and_move_turtle(-50, 50, 100, 100)
 
 
 def try_methods_and_functions():
@@ -249,7 +254,8 @@ def try_methods_and_functions():
     # function defined above.  If you don't see why, ** ASK FOR HELP. **
     #
     ####################################################################
-
+    rooms = rg.SimpleTurtle()
+    rooms.pen = rg.Pen('blue', 5)
 
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
