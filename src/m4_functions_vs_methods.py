@@ -84,7 +84,7 @@ def main():
     # When the TODOs ask you to test YOUR code, put YOUR tests here:
     try_methods()
     try_functions()
-
+    try_methods_and_functions()
 
     window.close_on_mouse_click()
 
@@ -195,7 +195,7 @@ def try_functions():
      -- One jumps to (-50, 50), then moves (while drawing) to (100, 100)
     """
     ####################################################################
-    # TODO: 4. Implement this function, per its doc-string above.
+    # DONE: 4. Implement this function, per its doc-string above.
     #    Put a statement in   main   to test this function
     #    (by calling this function).  IMPORTANT, IMPORTANT, IMPORTANT:
     #    Keep reading the rest of this TO DO before doing the above!
@@ -244,7 +244,7 @@ def try_methods_and_functions():
       8. Draw a SQUARE whose sides are each of length 50.
     """
     ####################################################################
-    # TODO: 5. Implement this function, per its doc-string above.
+    # DONE: 5. Implement this function, per its doc-string above.
     #    Put a statement in   main   to test this function
     #    (by calling this function).  IMPORTANT, IMPORTANT, IMPORTANT:
     #    Keep reading the rest of this TO DO before doing the above!
@@ -256,6 +256,28 @@ def try_methods_and_functions():
     ####################################################################
     rooms = rg.SimpleTurtle()
     rooms.pen = rg.Pen('blue', 5)
+
+    rooms.backward(150)
+
+    rooms.speed = 1
+    draw_many_squares(rooms, 2, 100, 30)
+
+    rooms.speed = 5
+    rooms.pen = rg.Pen('red', 5)
+    draw_many_squares(rooms, 10, 50, 15)
+
+    rooms.speed = 100
+    rooms.pen = rg.Pen('red', 35)
+    draw_many_squares(rooms, 8, 300, 60)
+
+    rooms.pen = rg.Pen('black', 3)
+
+    rooms.backward(200)
+
+    rooms.draw_circle(30)
+
+    rooms.draw_square(50)
+
 
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
